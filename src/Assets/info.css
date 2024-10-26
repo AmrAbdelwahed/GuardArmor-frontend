@@ -1,0 +1,45 @@
+.work-selection-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .work-section-top {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .primary-subheading {
+    font-size: 2rem;
+    color: #3c009d;
+  }
+  
+  .primary-text {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .work-selection-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .work-section-info {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .work-section-info h2 {
+    font-size: 1.5rem;
+    color: #3c009d;
+  }
+  
+  .work-section-info p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  

@@ -1,0 +1,69 @@
+.whatWeDo-container {
+    background-color: rgb(44,44,44);
+    min-height: 100vh;
+  }
+  
+  .hero-section {
+    background-color: rgb(42, 105, 239);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  
+  .services-grid {
+    padding: 4rem 0;
+  }
+  
+  .service-card {
+    background-color: white;
+    border-radius: 8px !important;
+    padding: 2rem !important;
+    text-align: center;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  @media (max-width: 600px) {
+    .hero-title {
+      font-size: 2.5rem !important;
+    }
+  
+    .hero-subtitle {
+      font-size: 1.25rem !important;
+    }
+  
+    .service-card {
+      margin-bottom: 2rem;
+    }
+  
+    .service-title {
+      font-size: 1.5rem !important;
+    }
+  
+    .service-description {
+      font-size: 1rem !important;
+    }
+  }

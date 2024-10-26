@@ -1,0 +1,42 @@
+
+.confirm-signup-container {
+    max-width: 850px;
+    margin: 15% 5%;
+    text-align: left;
+    
+}
+
+.confirm-signup-container h2 {
+    font-size: 80px;
+    margin-bottom: 20px;
+    color: #000000;
+    line-height: 1.2; /* Adjust line height as needed */
+    left: -50px;
+}
+
+.confirm-signup-container p {
+    font-size: 65px;
+    margin-bottom: 30px;
+    line-height: 1.4; /* Adjust line height as needed */
+}
+
+.continue-button {
+    padding: 10px 30px 10px 30px;
+    font-size: 30px;
+    width:max-content;
+    background-color: #000000;
+    color: white;
+    margin-left: 80%; /* Align button to the right */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.continue-button:hover {
+    background-color: #5500ff;
+}
+
+.continue-button span {
+    margin-left: 5px;
+}

@@ -1,0 +1,79 @@
+/* WhereWeAre.css */
+.whereWeAre-container {
+    background-color: rgb(44,44,44);
+    min-height: 100vh;
+  }
+  
+  .hero-section {
+    background-color: rgb(42, 105, 239);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem !important;
+    font-weight: 400 !important;
+    max-width: 600px;
+    margin: 0 auto !important;
+  }
+  
+  .locations-grid {
+    padding: 4rem 0;
+  }
+  
+  .location-card {
+    background-color: white;
+    border-radius: 8px !important;
+    padding: 2rem !important;
+    text-align: center;
+  }
+  
+  .location-title {
+    font-size: 1.75rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 1rem !important;
+    color: rgb(42, 105, 239) !important;
+  }
+  
+  .location-description {
+    font-size: 1.1rem !important;
+    color: #333 !important;
+    line-height: 1.6 !important;
+  }
+  
+  .map-container {
+    margin: 4rem auto; /* Center the map */
+    max-width: 1200px; /* Max width for larger screens */
+    border: 1px solid #ddd; /* Optional: Add a border */
+    border-radius: 8px; /* Optional: Add border radius */
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  @media (max-width: 600px) {
+    .hero-title {
+      font-size: 2.5rem !important;
+    }
+  
+    .hero-subtitle {
+      font-size: 1.25rem !important;
+    }
+  
+    .location-card {
+      margin-bottom: 2rem;
+    }
+  
+    .location-title {
+      font-size: 1.5rem !important;
+    }
+  
+    .location-description {
+      font-size: 1rem !important;
+    }
+  }

@@ -1,0 +1,71 @@
+.whoWeServe-container {
+    background-color: rgb(169, 169, 169) !important;
+    min-height: 100vh;
+  }
+  
+  .hero-section {
+    background-color: rgb(42, 105, 239);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .services-grid {
+    padding: 4rem 0;
+  }
+  
+  .service-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-icon {
+    font-size: 3rem;
+    color: rgb(42, 105, 239);
+    margin-bottom: 1rem;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  @media (max-width: 600px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1.25rem;
+    }
+  
+    .service-card {
+      margin-bottom: 2rem;
+    }
+  }
