@@ -46,7 +46,7 @@ const Navbar = () => {
                 <Box
                     sx={{ width: 250,
                         height: '100vh', 
-                        backgroundColor: 'rgb(34, 51, 119)', // Dark background for the menu
+                        backgroundColor: 'rgb(42, 105, 239)', // Dark background for the menu
                         color: 'white',
                         paddingTop: '10px',
                         paddingBottom: '10px'
