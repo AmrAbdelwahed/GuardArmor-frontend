@@ -35,6 +35,16 @@ body {
   background-color: #f6f6f6;
 }
 
+.button-primary {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: #1a56d6; /* Change the background color on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+
 nav {
   display: flex;
   align-items: center;

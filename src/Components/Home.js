@@ -26,27 +26,10 @@ const Home = () => {
             Find Security Guards the Easy Way.
           </p>
           <div style={{ marginTop: '30px' }}>
-            <a
-              href="/security-guard-register"
-              target="_self"
-              className="button-primary w-button"
-              style={{
-                marginRight: '15px',
-                padding: '15px 30px',
-                fontSize: '18px',
-                fontWeight: 'bold',
-                backgroundColor: '#2A69EF',
-                color: '#fff',
-                textDecoration: 'none',
-                borderRadius: '8px',
-              }}
-            >
-              Guards Start Here
-            </a>
-            <a
+          <a
               href="/companies-for-hire"
-              target="_self"
-              className="button-primary w-button"
+              target="_blank"
+              className="button-primary"
               style={{
                 padding: '15px 30px',
                 fontSize: '18px',
@@ -59,6 +42,25 @@ const Home = () => {
             >
               Companies Start Here
             </a>
+
+            <a
+              href="/security-guard-register"
+              target="_blank"
+              className="button-primary w-button button-hover"
+              style={{
+                marginLeft: '15px',
+                padding: '15px 30px',
+                fontSize: '18px',
+                fontWeight: 'bold',
+                backgroundColor: '#2A69EF',
+                color: '#fff',
+                textDecoration: 'none',
+                borderRadius: '8px',
+              }}
+            >
+              Guards Start Here
+            </a>
+            
           </div>
         </div>
       </div>
