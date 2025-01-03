@@ -10,74 +10,71 @@ import RequestQuoteIcon from '@mui/icons-material/RequestQuote';
 import SecurityIcon from '@mui/icons-material/Security';
 import PeopleIcon from '@mui/icons-material/People';
 import MapIcon from '@mui/icons-material/Map';
+import mapleLeaf from '../Assets/leaf.png';
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
 
     const menuOptions = [
-        { text: "Home", icon: <HomeIcon />, path: "/home" },
-        // { text: "Sign Up", icon: <PersonAdd />, path: "/SignUp" },
-        { text: "Request a Quote", icon: <RequestQuoteIcon />, path: "/RequestQuote" },
-        { text: "What We Do", icon: <SecurityIcon />, path: "/WhatWeDo" },
-        { text: "Who We Serve", icon: <PeopleIcon />, path: "/WhoWeServe" },
-        { text: "Where We Are", icon: <MapIcon />, path: "/WhereWeAre" },
-        { text: "About", icon: <InfoIcon />, path: "/AboutUs" }
+        { text: "Home", icon: <HomeIcon />, href: "/home" },
+        { text: "What We Do", icon: <SecurityIcon />, href: "#what-we-do" },
+        { text: "Who We Serve", icon: <PeopleIcon />, href: "#who-we-serve" },
+        { text: "Where We Are", icon: <MapIcon />, href: "#where-we-are" },
+        { text: "About", icon: <InfoIcon />, href: "#about" }
 
     ];
 
     return (
         <nav className="header-bar">
-            <div className="nav-logo-container">
-                <Link to="/home"><img src={logo} alt="" style={{ width: 'auto', height: 'auto' }}/></Link>
-            </div>
-            <div className="navbar-links-container">
+          <div className="nav-logo-container" style={{ display: 'flex', alignItems: 'center' }}>
+          <a href="/home" style={{ display: 'flex', alignItems: 'center' }}>
+          <img src={logo} alt="GuardArmor Logo" style={{ width: 'auto', height: 'auto' }} />
+              <img 
+                src={mapleLeaf} 
+                alt="Canadian Maple Leaf" 
+                style={{ width: '45px', height: 'auto', marginLeft: '10px' }} // Adjust size and spacing here
+              />            </a>
+          </div>
+          <div className="navbar-links-container">
             {menuOptions.map((item) => (
-                    <Link key={item.text} to={item.path} className="navbar-link">
-                        {item.text}
-                    </Link>
+              <a key={item.text} href={item.href} className="navbar-link">
+                {item.text}
+              </a>
+            ))}
+          </div>
+          <div className="navbar-menu-container">
+            <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
+          </div>
+          <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
+            <Box
+              sx={{
+                width: 250,
+                height: '100vh',
+                backgroundColor: 'rgb(42, 105, 239)',
+                color: 'white',
+                paddingTop: '10px',
+                paddingBottom: '10px',
+              }}
+              role="presentation"
+              onClick={() => setOpenMenu(false)}
+              onKeyDown={() => setOpenMenu(false)}
+            >
+              <List>
+                {menuOptions.map((item) => (
+                  <ListItem key={item.text} disablePadding>
+                    <a href={item.href} style={{ textDecoration: 'none', color: 'inherit' }}>
+                      <ListItemButton>
+                        <ListItemIcon sx={{ color: '#fff' }}>{item.icon}</ListItemIcon>
+                        <ListItemText sx={{ color: '#fff' }} primary={item.text} />
+                      </ListItemButton>
+                    </a>
+                  </ListItem>
                 ))}
-            </div>
-
-            <div className="navbar-menu-container">
-                <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
-            </div>
-
-            <Drawer open={openMenu} onClose={() => setOpenMenu(false)}  anchor="right">
-                <Box
-                    sx={{ width: 250,
-                        height: '100vh', 
-                        backgroundColor: 'rgb(42, 105, 239)', // Dark background for the menu
-                        color: 'white',
-                        paddingTop: '10px',
-                        paddingBottom: '10px'
-                     }}
-                    role="presentation"
-                    
-                    onClick={() => setOpenMenu(false)}
-                    onKeyDown={() => setOpenMenu(false)}
-                >
-                    <List>
-                        {menuOptions.map((item) => (
-                            <ListItem key={item.text} disablePadding>
-                                <Link to={item.path}>
-                                <ListItemButton
-                                sx={{
-                                    '&:hover': {
-                                        backgroundColor: 'rgba(255, 255, 255, 0.1)', // Light up with a soft white overlay
-                                        color: '#B0C4DE', // Optional: Change text color on hover for contrast
-                                        transition: 'background-color 0.6s ease', // Smooth transition for the background color
-                                    }
-                                }}>
-                                    <ListItemIcon sx={{ color: '#fff' }}>{item.icon}</ListItemIcon>
-                                    <ListItemText sx={{ color: '#fff' }} primary={item.text} />
-                                </ListItemButton></Link>
-                            </ListItem>
-                        ))}
-                    </List>
-                </Box>
-            </Drawer>
+              </List>
+            </Box>
+          </Drawer>
         </nav>
-    );
-};
-
-export default Navbar;
+      );
+    };
+    
+    export default Navbar;

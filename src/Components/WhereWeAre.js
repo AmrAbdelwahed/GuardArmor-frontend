@@ -45,17 +45,30 @@ const locations = [
 const WhereWeAre = () => {
   return (
     <div className="whereWeAre-container">
-      <Navbar />
-      <div className="hero-section">
-        <Container maxWidth="sm">
-          <Typography component="h1" variant="h2" className="hero-title" gutterBottom>
-            Where We Are
-          </Typography>
-          <Typography variant="h5" className="hero-subtitle">
-            Serving communities across Ontario
-          </Typography>
-        </Container>
-      </div>
+      <div
+      style={{
+        backgroundImage: "url('/path-to-background.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        height: "180px", // Reduced height
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        textAlign: "center",
+        padding: "20px", // Reduced padding
+      }}
+    >
+      <Typography variant="h2" style={{ color: "white", fontWeight: "bold" }}>
+      Where We Are
+      </Typography>
+      <Typography
+        variant="h5"
+        style={{ color: "white", maxWidth: "600px", marginTop: "10px" }}
+      >
+        Serving communities across Ontario
+      </Typography>
+    </div>
       
       {/* Move MapContainer here */}
       <Container maxWidth="md" className="map-container">

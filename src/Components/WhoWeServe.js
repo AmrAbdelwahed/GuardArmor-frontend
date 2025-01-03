@@ -79,17 +79,30 @@ const services = [
 const WhoWeServe = () => {
   return (
     <WhoWeServeContainer>
-      <Navbar />
-      <HeroSection>
-        <Container maxWidth="sm">
-          <Typography component="h1" variant="h2" gutterBottom>
+      <div
+            style={{
+              backgroundImage: "url('/path-to-background.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              height: "180px", // Reduced height
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              textAlign: "center",
+              padding: "20px", // Reduced padding
+            }}
+          >
+            <Typography variant="h2" style={{ color: "white", fontWeight: "bold" }}>
             Who We Serve
-          </Typography>
-          <Typography variant="h5">
-            Protecting a wide range of industries with expert security solutions
-          </Typography>
-        </Container>
-      </HeroSection>
+            </Typography>
+            <Typography
+              variant="h5"
+              style={{ color: "white", maxWidth: "600px", marginTop: "10px" }}
+            >
+              Protecting a wide range of industries with expert security solutions
+            </Typography>
+          </div>
       <Container maxWidth="md">
         <CardGrid container spacing={4}>
           {services.map((service) => (

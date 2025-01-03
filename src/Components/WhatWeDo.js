@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Typography, Grid, Card, CardContent } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import Navbar from './Navbar';
 import '../Assets/WhatWeDo.css';
 import SecurityIcon from '@mui/icons-material/Security';
 import DriveEtaIcon from '@mui/icons-material/DriveEta';
@@ -61,18 +60,31 @@ const services = [
 
 const WhatWeDo = () => {
   return (
-    <WhatWeDoContainer>
-      <Navbar />
-      <HeroSection>
-        <Container maxWidth="sm">
-          <Typography component="h1" variant="h2" gutterBottom>
-            What We Do
-          </Typography>
-          <Typography variant="h5">
-            Comprehensive security solutions tailored to your needs
-          </Typography>
-        </Container>
-      </HeroSection>
+    <WhatWeDoContainer >
+      <div
+      style={{
+        backgroundImage: "url('/path-to-background.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        height: "180px", // Reduced height
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        textAlign: "center",
+        padding: "10px", // Reduced padding
+      }}
+    >
+      <Typography variant="h2" style={{ color: "white", fontWeight: "bold" }}>
+        What We Do
+      </Typography>
+      <Typography
+        variant="h5"
+        style={{ color: "white", maxWidth: "600px", marginTop: "10px" }}
+      >
+        Comprehensive security solutions tailored to your needs
+      </Typography>
+    </div>
       <Container className="services-grid" maxWidth="md">
         <Grid container spacing={4}>
           {services.map((service) => (
