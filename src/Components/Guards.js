@@ -40,7 +40,6 @@ const Guards = () => {
     if (!formData.license.trim()) newErrors.license = 'Security guard license is required';
     if (!formData.yearsOfExperience.trim()) newErrors.yearsOfExperience = 'Years of experience is required';
     if (!formData.city.trim()) newErrors.city = 'City is required';
-    if (!formData.details.trim()) newErrors.details = 'Additional details are required';
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -111,7 +110,7 @@ const Guards = () => {
 
       <div className="container">
         <div className="header">
-          <div className="text">Guards Application</div>
+          <div className="text">Security Guards Application</div>
         </div>
         <div className="inputs">
           {[ 

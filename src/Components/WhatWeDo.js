@@ -18,12 +18,10 @@ const StyledCard = styled(Card)(({ theme }) => ({
 }));
 
 const WhatWeDoContainer = styled('div')(({ theme }) => ({
-    backgroundColor: 'rgb(44,44,44)',
     minHeight: '100vh',
   }));
 
 const HeroSection = styled('div')(({ theme }) => ({
-  backgroundColor: 'rgb(42, 105, 239)',
   color: 'white',
   padding: theme.spacing(8, 0, 6),
   textAlign: 'center',
@@ -66,21 +64,21 @@ const WhatWeDo = () => {
         backgroundImage: "url('/path-to-background.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "180px", // Reduced height
+        height: "100px", // Reduced height
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
         textAlign: "center",
-        padding: "10px", // Reduced padding
+        padding: "0px", // Reduced padding
       }}
     >
-      <Typography variant="h2" style={{ color: "white", fontWeight: "bold" }}>
+      <Typography variant="h2" style={{ color: "black", fontWeight: "bold" }}>
         What We Do
       </Typography>
       <Typography
         variant="h5"
-        style={{ color: "white", maxWidth: "600px", marginTop: "10px" }}
+        style={{ color: "black", maxWidth: "600px", marginTop: "10px" }}
       >
         Comprehensive security solutions tailored to your needs
       </Typography>

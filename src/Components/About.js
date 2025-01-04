@@ -5,7 +5,6 @@ import '../Assets/About.css'; // Assuming you want to create custom styling here
 
 // Styled components
 const AboutContainer = styled('div')(({ theme }) => ({
-  backgroundColor: 'rgb(44, 44, 44)',
   padding: theme.spacing(8, 0),
   color: 'white',
 }));
@@ -33,20 +32,20 @@ const About = () => {
   return (
     <AboutContainer>
       <Container maxWidth="md">
-        <Typography variant="h2" align="center" style={{ fontWeight: 'bold', marginBottom: '20px' }}>
+        <Typography variant="h2" align="center" style={{  color: "black", fontWeight: 'bold', marginBottom: '20px' }}>
           About Us
         </Typography>
-        <Typography variant="h5" align="center" style={{ marginBottom: '40px' }}>
+        <Typography variant="h5" align="center" style={{ color: "black",  marginBottom: '40px' }}>
           Get in touch with us for more information or inquiries.
         </Typography>
 
         {/* Contact Information */}
         <Grid container spacing={4} justifyContent="center">
           <Grid item xs={12} sm={6} md={4}>
-            <Typography variant="h6" align="center">
+            <Typography  color= "black" variant="h6" align="center">
               <strong>Email:</strong> contact@guardarmor.com
             </Typography>
-            <Typography variant="h6" align="center" style={{ marginTop: '10px' }}>
+            <Typography color= "black" variant="h6" align="center" style={{ marginTop: '10px' }}>
               <strong>Phone:</strong> +123 456 7890
             </Typography>
           </Grid>

@@ -5,7 +5,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 .nav-logo-container img {
-  max-width: 290px; /* Increase the max width to make the logo bigger */
+  max-width: 350px; /* Increase the max width to make the logo bigger */
   height: auto; /* Keep the height in proportion */
 }
 

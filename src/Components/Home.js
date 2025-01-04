@@ -26,7 +26,7 @@ const Home = () => {
             Find Security Guards the Easy Way.
           </p>
           <div style={{ marginTop: '30px' }}>
-          <a
+            <a
               href="/companies-for-hire"
               target="_blank"
               className="button-primary"
@@ -58,11 +58,19 @@ const Home = () => {
                 borderRadius: '8px',
               }}
             >
-              Guards Start Here
+              SecurityGuards Start Here
             </a>
-            
           </div>
         </div>
+      </div>
+
+      {/* Selling/Marketing Pitch */}
+      <div style={{ padding: '20px', textAlign: 'center', backgroundColor: '#f9f9f9' }}>
+        <p style={{ fontSize: '18px', color: '#333' }}>
+          <strong>Guard Armor</strong> is driven by a commitment to the success of both security guards and companies. 
+          Our Security Guard staffing services help our Security Guards industry customers staff their staffing with 
+          qualified, experienced Guards, and they can help Security Guards find jobs quickly and easily.
+        </p>
       </div>
 
       {/* Sections */}
@@ -71,9 +79,6 @@ const Home = () => {
       </div>
       <div id="who-we-serve">
         <WhoWeServe />
-      </div>
-      <div id="where-we-are">
-        <WhereWeAre />
       </div>
       <div id="about">
         <About />

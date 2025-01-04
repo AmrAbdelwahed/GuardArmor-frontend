@@ -47,8 +47,7 @@ const CompaniesStartHere = () => {
     if (!formData.securityGuardType.trim()) newErrors.securityGuardType = 'Security guard type is required';
     if (!formData.numberOfGuards.trim()) newErrors.numberOfGuards = 'Number of security guards is required';
     if (!formData.service.trim()) newErrors.service = 'Type of service is required';
-    if (!formData.details.trim()) newErrors.details = 'Details are required';
-
+    
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };

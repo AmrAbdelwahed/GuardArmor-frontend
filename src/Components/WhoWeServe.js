@@ -19,7 +19,6 @@ import BusinessIcon from '@mui/icons-material/Business';
 // Styled components using MUI's styled API
 
 const WhoWeServeContainer = styled('div')(({ theme }) => ({
-    backgroundColor: 'rgb(44,44,44)',
     minHeight: '100vh',
   }));
 
@@ -93,12 +92,12 @@ const WhoWeServe = () => {
               padding: "20px", // Reduced padding
             }}
           >
-            <Typography variant="h2" style={{ color: "white", fontWeight: "bold" }}>
+            <Typography variant="h2" style={{ color: "black", fontWeight: "bold" }}>
             Who We Serve
             </Typography>
             <Typography
               variant="h5"
-              style={{ color: "white", maxWidth: "600px", marginTop: "10px" }}
+              style={{ color: "black", maxWidth: "600px", marginTop: "10px" }}
             >
               Protecting a wide range of industries with expert security solutions
             </Typography>

@@ -59,12 +59,12 @@ const WhereWeAre = () => {
         padding: "20px", // Reduced padding
       }}
     >
-      <Typography variant="h2" style={{ color: "white", fontWeight: "bold" }}>
+      <Typography variant="h2" style={{ color: "black", fontWeight: "bold" }}>
       Where We Are
       </Typography>
       <Typography
         variant="h5"
-        style={{ color: "white", maxWidth: "600px", marginTop: "10px" }}
+        style={{ color: "black", maxWidth: "600px", marginTop: "10px" }}
       >
         Serving communities across Ontario
       </Typography>
