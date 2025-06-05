@@ -100,24 +100,24 @@ const About = () => {
             </a>
 
             {/* X (Twitter) */}
-            <a 
+            {/* <a 
               href="https://x.com/GuardArmorSecur" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-white hover:text-blue-200 transition-colors"
             >
               <SiX size={24} />
-            </a>
+            </a> */}
 
             {/* TikTok */}
-            <a 
+            {/* <a 
               href="https://www.tiktok.com/@guard.armor.securi" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-white hover:text-blue-200 transition-colors"
             >
               <SiTiktok size={24} />
-            </a>
+            </a> */}
             
             {/* LinkedIn */}
             <a 
