@@ -139,6 +139,7 @@ const About = () => {
               <SiWhatsapp size={24} />
             </a>
           </div>
+          
 
           <p className="text-center text-white mt-4">
             &copy; 2021 Guard Armor Security Ltd. All rights reserved.
